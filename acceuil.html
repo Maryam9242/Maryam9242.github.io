@@ -7,48 +7,131 @@
   </head>
   <body>
     <header>
+
+      <button id="ba1" class="boutNorm"> é um profissional?</button>
+<div id="ellipse4">
       <img id="image2" src="imageAcceuil/logoProfil.png">
-      <button id="ba1" class="boutNorm"><a href="profissional.php" id="liens1"> é um profissional?</a></button>
-      <button id="ba2" class="boutNorm">  <a href="inscription_connexion.php" id="lien2">registo/login</a></button>
-      <img id="image2" src="imageAcceuil/logoSite.png">
+      <a href="inscription_connexion.php" id="lien2">registo/login</a>
+</div>
+      <img id="image1" src="imageAcceuil/logoSite.png">
+
     </header>
 
 <p id="p1">Um Professional de Saude sempre ha mao e mais perto de si</p>
 <p id=p2>“Cuide de sua saude e de quem ama,em dois cliques”</p>
-<img id="image2" src="imageAcceuil/logoSite.png">
-<img id="ellipse6" src="imageAcceuil/ellipse6.png">
-<img id="ellipse7" src="imageAcceuil/ellipse7.png">
+<img id="rectangle6" src="imageAcceuil/rectangle6.png">
 
+<div id="barRecherche">
+  <form id="formAceuil">
+<input type="text" id="recherche1" placeholder="nome,estabelecimento" required/>
+<input type="text" id="loc" placeholder="localização" required/>
+<select id="dropdown">
+   <option value="">especialidade</option>
+   <option value="option1">Medicina convencional</option>
+   <option value="option2">Veterinário</option>
+   <option value="option3">Medicina alternativa</option>
+ </select>
+<button>Filtro</button>
+<img id="recherche" src="imageAcceuil/recherche.png">
+</form>
+</div>
+
+
+
+<div id="ellipse5">
 <p id="p3">“Por video-chamada <br>
 ou<br>
  consultorio”</p>
+</div>
 
- <p id=p4>Teleconsulta sem marcação</p>
-
-<button id="ba3" class="boutOption"><a href="medicina_convencional.php">medicina <br>convencional</a></button>
-
-<button id="ba4" class="boutOption"><a href="veterinário.php">veterinário</a></button>
-<button id="ba5" class="boutOption"><a href="medicina_alternativa.php">medicina <br>alternativa</a></button>
-
-<img id="ellipse10" src="imageAcceuil/ellipse10.png">
 <img id="image6" src="imageAcceuil/image6.png">
-<img id="image18" src="imageAcceuil/image18.png">
+
+<div id="ellipse9"
+ <p id=p4>Teleconsulta sem marcação</p>
+ <img id="ellipse10" src="imageAcceuil/ellipse10.png">
+</div>
+
 <img id="image22" src="imageAcceuil/image22.png">
+
+<div id="rectangle8">
+<img id="ellipse7" src="imageAcceuil/ellipse7.png">
+<button id="ba3" class="boutOption"><a href="medicina_convencional.php">medicina <br>convencional</a></button>
+</div>
+
+<div id="rectangle9"
+<img id="image18" src="imageAcceuil/image18.png">
+<button id="ba4" class="boutOption"><a href="veterinário.php">veterinário</a></button>
+</div>
+
+<div id="rectangle7">
+<img id="ellipse6" src="imageAcceuil/ellipse6.png">
+<button id="ba5" class="boutOption"><a href="medicina_alternativa.php">medicina <br>alternativa</a></button>
+</div>
+
+
+
+
+
 <img id="imageBD" src="imageAcceuil/imageBD.png">
 <img id="imageBG" src="imageAcceuil/imageBG.png">
-<img id="recherche" src="imageAcceuil/recherche.png">
-<img id="rectangle6" src="imageAcceuil/rectangle6.png">
+
+
 
 <button id"ba5">CTA</button>
 
 
 
+<!--code carroussel
+
+
+<div class="carousel">
+  <div class="carousel-slide">
+    <img src="image1.jpg" alt="Image 1">
+    <div class="carousel-caption">
+      <h2>Titre de l'image 1</h2>
+      <p>Description de l'image 1</p>
+    </div>
+  </div>
+  <div class="carousel-slide">
+    <img src="image2.jpg" alt="Image 2">
+    <div class="carousel-caption">
+      <h2>Titre de l'image 2</h2>
+      <p>Description de l'image 2</p>
+    </div>
+  </div>
+  <div class="carousel-slide">
+    <img src="image3.jpg" alt="Image 3">
+    <div class="carousel-caption">
+      <h2>Titre de l'image 3</h2>
+      <p>Description de l'image 3</p>
+    </div>
+  </div>
+</div>
+
+-->
 <footer>
 <a href="aviso_legal.php" id="liensAvisLegal"> aviso legal</a>
 <a href="contactar.php" id="lienContact">contactar</a>
 <a href="reseaux.php" id="lienReseaux">redes sociais</a>
 </footer>
 
+<script type="text/javascript">
+  /** code pour animé le carrousel**/
+  /**$(document).ready(function() {
+  $(".carousel-slide:first-child").addClass("active");
 
+  setInterval(function() {
+    var activeSlide = $(".carousel-slide.active");
+    var nextSlide = activeSlide.next();
+
+    if (nextSlide.length === 0) {
+      nextSlide = $(".carousel-slide:first-child");
+    }
+
+    activeSlide.removeClass("active");
+    nextSlide.addClass("active");
+  }, 3000);
+});**/
+</script>
   </body>
 </html>

@@ -4,4 +4,85 @@ rgba(217, 217, 217, 0) 50.38%,
  rgba(0, 204, 255, 0.63) 86.19%);
 }
 
-/***page d'acceuil***/
+/***css des boutons***/
+
+.boutNorm {
+  text-decoration: none;
+  font-family: "Happy Monkey", Georgia, serif;
+  background-color: #00CCFF;
+  border: none ;
+  color: white;
+  margin:3px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
+  transition-duration: 0.6s;
+}
+
+.boutNorm:hover {
+    background-color: #daffff;
+    color:#00CCFF;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+
+/*** css de la page d'acceuil***/
+/***css du header***/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+.header-left {
+  order: 1;
+}
+
+.header-right {
+  order: 2;
+  display: flex;
+  align-items: center;
+}
+
+.header-right a {
+  margin-right: 10px;
+}
+
+/* .header-right img {
+  max-width: 100px;
+  max-height: 100px;
+} */
+
+/*** css é um professionnal***/
+#ba1{
+  border-radius: 10%;
+}
+
+
+/***css acces profil***/
+#image2{
+position: absolute;
+width:6.5%;
+height: 16%;
+left: 90%;
+top: -1%
+
+}
+
+/* #ellipse4{
+
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  left: 60%;
+  top: -30%;
+  border-radius: 10%;
+  background: #66CC33;
+
+
+} */
