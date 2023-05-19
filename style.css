@@ -2,18 +2,17 @@ body {
 background: linear-gradient(90deg, rgba(102, 204, 51, 0.369683) 31.96%,
 rgba(217, 217, 217, 0) 50.38%,
  rgba(0, 204, 255, 0.63) 86.19%);
+ 
 }
 
 /***css des boutons***/
 
 .boutNorm {
   text-decoration: none;
-  font-family: "Happy Monkey", Georgia, serif;
+  font-family: "Happy Monkey";
   background-color: #00CCFF;
   border: none ;
   color: white;
-  margin:3px;
-  padding: 10px 20px;
   text-align: center;
   font-size: 20px;
   transition-duration: 0.6s;
@@ -32,57 +31,90 @@ a {
 
 /*** css de la page d'acceuil***/
 /***css du header***/
-.header {
+ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f2f2f2;
-  padding: 10px;
+  padding: 4%;
+  background:linear-gradient(90deg, rgba(102, 204, 51, 0.369683) 31.96%,
+    rgba(217, 217, 217, 0) 50.38%,
+     rgba(0, 204, 255, 0.63) 86.19%); ;
 }
-.header-left {
+/* header-left {
   order: 1;
 }
 
-.header-right {
+header-right {
   order: 2;
   display: flex;
   align-items: center;
-}
-
-.header-right a {
-  margin-right: 10px;
-}
-
-/* .header-right img {
-  max-width: 100px;
-  max-height: 100px;
 } */
+
+/* header-right a {
+  margin-right: 10px;
+} */
+
+
 
 /*** css é um professionnal***/
 #ba1{
-  border-radius: 10%;
+  /*border-radius: 4%;*/
+  position: absolute;
+  margin: 2%;
+  padding: 2% 7%;
+  top:2%;
 }
 
 
 /***css acces profil***/
-#image2{
-position: absolute;
-width:6.5%;
-height: 16%;
-left: 90%;
-top: -1%
+ #image2{
+position:relative;
+width:30%;
+height: 46%;
+left: 35%;
+top:30%;
 
 }
 
-/* #ellipse4{
+#lien2{
+  position:relative;
+  color: white;
+  font-family: "Happy Monkey";
+  top:35%;
+  right: 1%;
+  left: 5%;
+}
 
+ #ellipse4{
   position: absolute;
-  width: 40%;
-  height: 50%;
-  left: 60%;
-  top: -30%;
-  border-radius: 10%;
+  width: 20%;
+  height: 30%;
+  left: 80%;
+  top: -10%;
+  border-radius: 60%;
   background: #66CC33;
+  /*transform: rotate(-14.91deg);*/
+}
+#image1{
+  position: relative;
+  width:50%;
+  height: 50%;
+  top:-20%;
+  left:30%;
+}
 
 
-} */
+
+/**css partie 2 de la page acceuil image + barre de recherche**/
+
+
+
+#rectangle6{
+
+position: absolute;
+width: 70%;
+height: 80%;
+left: 15%;
+top: 65%;
+ opacity: 80%;
+}
