@@ -230,14 +230,179 @@ top: 64%;
 position: absolute;;
 opacity: 0.5;
 left:60%;
-   top:130%;
-   width: 40%;
+top:130%;
+   width: 30%;
+}
+
+
+#ellipse5{
+position: absolute;
+width:80%;
+height: 30%;
+left: -30%;
+top: 130%;
+border-radius: 60%;
+background: #66CC33;
+text-align: center;
+font-size: 250%;
+color:white;
+padding-left: 5%;
+}
+
+#ellipse10{
+  position: absolute;
+  left: 81.5%;
+  top:-50%;
 }
 
 
 
+#ellipse9{
+position: absolute;
+width: 70%;
+height: 25%;
+left: 28%;
+top: 200%;
+border-radius: 60%;
+background: #00CCFF;
+text-align: center;
+color: white;
+font-size: 150%;
+}
+
+#p4{
+  position: absolute;
+  top: 120%;
+  padding: 40%;
+}
+
+#image22{
+  position: absolute;
+  top:170%;
+left:-3%;
+width: 30%;
+}
+
+/* #p4{
+  position: relative;
+  bottom:180%;
+} */
+
+/*** css des carrées de navigations**/
+/*rectangle 1*/
+#rectangle8{
+  box-sizing: border-box;
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  left: 9%;
+  top: 240%;
+
+  background: #FFFFFF;
+  border: 5px solid #66CC33;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+}
+
+#ellipse7{
+position: relative;
+width: 60%;
+top:10%;
+left:20%;
+}
+
+#ba3{
+  position: relative;
+top:30%;
+left: -30%;
+
+}
+/*rectangle 2*/
+
+#rectangle9{
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  left: 40%;
+  top: 240%;
+
+  background: #FFFFFF;
+  border: 5px solid #66CC33;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
 
 
+}
+
+#image18{
+  position: relative;
+  width: 60%;
+  top:10%;
+  left:20%;
+
+
+}
+
+#ba4{
+  position: relative;
+top:70%;
+left: 30%;
+}
+
+
+/***rectangle 3**/
+
+#rectangle7{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  left: 70%;
+  top: 240%;
+
+  background: #FFFFFF;
+  border: 5px solid #66CC33;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+
+}
+
+#ellipse6{
+  position: relative;
+  width: 60%;
+  top:10%;
+  left:20%;
+
+
+}
+
+#ba5{
+
+position: relative;
+top:25%;
+left: -27%;
+}
+
+/**css image entre carroussel**/
+
+#imageBD{
+position: absolute;
+width: 60%;
+top:300%;
+left:40%
+}
+
+#imageBG{
+
+  position: absolute;
+  width: 60%;
+  top:300%;
+  left:-10%
+}
 /**css footer
 footer{
 box-sizing: border-box;
