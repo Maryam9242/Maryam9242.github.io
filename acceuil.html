@@ -80,62 +80,95 @@ ou<br>
 <img id="imageBG" src="imageAcceuil/imageBG.png">
 
 
-<!--
-<button id"ba5">CTA</button>
 
--->
 
-<!--code carroussel
+
 
 
 <div class="carousel">
   <div class="carousel-slide">
-    <img src="image1.jpg" alt="Image 1">
-    <div class="carousel-caption">
-      <h2>Titre de l'image 1</h2>
-      <p>Description de l'image 1</p>
-    </div>
+    <img class="imgcarroussel" src="imageAcceuil/carrousel1.png" alt="saude">
+
   </div>
   <div class="carousel-slide">
-    <img src="image2.jpg" alt="Image 2">
-    <div class="carousel-caption">
-      <h2>Titre de l'image 2</h2>
-      <p>Description de l'image 2</p>
-    </div>
+    <img class="imgcarroussel" src="imageAcceuil/2.png" alt="saude">
+
   </div>
   <div class="carousel-slide">
-    <img src="image3.jpg" alt="Image 3">
-    <div class="carousel-caption">
-      <h2>Titre de l'image 3</h2>
-      <p>Description de l'image 3</p>
-    </div>
-  </div>
+    <img class="imgcarroussel" src="imageAcceuil/3.png" alt="saude">
 </div>
 
--->
-<footer>
+
+<div class="carousel-slide">
+  <img class="imgcarroussel" src="imageAcceuil/4.png" alt="saude">
+</div>
+
+<div class="carousel-slide">
+  <img class="imgcarroussel" src="imageAcceuil/5.png" alt="saude">
+</div>
+
+
+</div>
+
+
+<div class="carousel2">
+  <div class="carousel-slide2">
+    <img class="imgcarroussel" src="imageAcceuil/6.png" alt="saude">
+
+  </div>
+  <div class="carousel-slide2">
+    <img class="imgcarroussel" src="imageAcceuil/7.png" alt="saude mental">
+
+  </div>
+  <div class="carousel-slide2">
+    <img class="imgcarroussel" src="imageAcceuil/8.png" alt="manter-se forma">
+</div>
+
+
+<div class="carousel-slide2">
+  <img class="imgcarroussel" src="imageAcceuil/9.png" alt="acompanhado">
+</div>
+
+<div class="carousel-slide2">
+  <img class="imgcarroussel" src="imageAcceuil/10.png" alt="acompanhado">
+</div>
+</div>
+
+ <footer>
 <a href="aviso_legal.php" id="liensAvisLegal"> aviso legal</a>
 <a href="contactar.php" id="lienContact">contactar</a>
 <a href="reseaux.php" id="lienReseaux">redes sociais</a>
 </footer>
 
 <script type="text/javascript">
-  /** code pour animé le carrousel**/
-  /**$(document).ready(function() {
-  $(".carousel-slide:first-child").addClass("active");
+document.addEventListener("DOMContentLoaded", function() {
+  const carousel = document.querySelector(".carousel");
+  const carousel2 = document.querySelector(".carousel2");
+  const slides = carousel.querySelectorAll(".carousel-slide");
+  const slides2 = carousel.querySelectorAll(".carousel2-slide");
+  const slideWidth = slides[0].clientWidth;
+  let slideIndex = 0;
 
   setInterval(function() {
-    var activeSlide = $(".carousel-slide.active");
-    var nextSlide = activeSlide.next();
+    slideIndex++;
+    carousel.style.transition = "transform 0.3s ease-in-out";
+    carousel2.style.transition = "transform 0.3s ease-in-out";
+    carousel.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+    carousel2.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
 
-    if (nextSlide.length === 0) {
-      nextSlide = $(".carousel-slide:first-child");
+    if (slideIndex === slides.length - 1) {
+      setTimeout(function() {
+        carousel.style.transition = "none";
+        carousel2.style.transition = "none";
+        carousel.style.transform = "translateX(0)";
+        carousel2.style.transform = "translateX(0)";
+        slideIndex = 0;
+      }, 300);
     }
-
-    activeSlide.removeClass("active");
-    nextSlide.addClass("active");
   }, 3000);
-});**/
+});
+
 </script>
+
   </body>
 </html>
