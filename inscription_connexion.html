@@ -5,26 +5,34 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>registo/login</title>
   </head>
-  <body>
-    <header>
-<button id="ba1" class="boutNorm"> é um profissional?</button>
-<a href="acceuil.html"><img id="image9" src="imageAcceuil/image9.png"></a>
+  <body id="bodyinscription_connexion">
+    <header id="headerLogin">
+<button id="bi1" class="boutNorm"> é um profissional?</button>
+<a href="acceuil.html" id="lien9"><img id="image9" src="imageAcceuil/image9.png" width="50"></a>
     </header>
 
     <div id="rectangle18">
-      <label class="title1" id="label1">Já tenho uma conta Saudeasy
+      <div id="login">
       <form id="connexion" method="post">
-        <label>endereço de correio electrónico ou telefone *
-        <input type="text"></label>
-        <label>palavra-passe*
-        <input type="password"></label>
+
+      <h1 class="title1" id="label1">Já tenho uma conta Saudeasy</h1>
+<br>
+        <label class="textelogin">endereço de correio electrónico ou telefone *<br>
+        <input type="text" class="textarea"></label><br><br>
+        <label class="textelogin">palavra-passe*<br>
+        <input type="password" class="textarea"></label>
         <br>
-        <label><input type="checkbox" >recordar o meu login</label>
         <br>
-        <input type="submit" value=login>
-      </form>
-</label>
-<a id="lien3">esqueci-me da minha palavra-passe?</a>
+        <label class="textelogin"><input type="checkbox" > recordar o meu login</label>
+        <br>
+      <br>
+        <input type="submit" value="login" id="boutlogin" class="boutNorm" >
+
+<br></form>
+<a id="lien3" class="textelogin" href="reinitialiser_mp.php">esqueci-me da minha palavra-passe?</a>
+
+
+</div>
     </div>
 
 
@@ -52,9 +60,9 @@
   escolha o seu Seguro de Saùde
  </select>
  <br>
-<label><input type="image" id="ajouter" src="imageAcceuil/image14.png">adicionar uma pessoa</label>
+<label><input type="image" id="ajouter" src="imageAcceuil/image15.png" width="5%">adicionar uma pessoa</label>
 <br>
-<label><input type="image" id="ajouter" src="imageAcceuil/image14.png">adicionar um animal de estimação</label>
+<label><input type="image" id="ajouter" src="imageAcceuil/image15.png" width="5%">adicionar um animal de estimação</label>
 <br>
 <label><input type="checkbox" >Recordar o meu login</label><br>
 <label><input type="checkbox" >Aceitar as condições</label><br>

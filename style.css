@@ -61,9 +61,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 4%;
-  background:linear-gradient(90deg, rgba(102, 204, 51, 0.369683) 31.96%,
-    rgba(217, 217, 217, 0) 50.38%,
-     rgba(0, 204, 255, 0.63) 86.19%); ;
+ background-color: none;
 }
 /* header-left {
   order: 1;
@@ -269,7 +267,7 @@ top: 130%;
 border-radius: 60%;
 background: #66CC33;
 text-align: center;
-font-size: 250%;
+font-size: 150%;
 color:white;
 padding-left: 5%;
 }
@@ -447,6 +445,7 @@ left:40%
   display: flex;
   transition: transform 0.3s ease-in-out;
   animation: carousel-animation 15s infinite linear;
+
 }
 
 .carousel-slide {
@@ -457,7 +456,11 @@ left:40%
   width: 100%;
   height: auto;
 }
+.carousel-slide:hover {
 
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 @keyframes carousel-animation {
   0% {
     transform: translateX(0);
@@ -493,6 +496,11 @@ left:40%
   width: 100%;
   height: auto;
 }
+.carousel-slide2:hover {
+
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 
 @keyframes carousel2-animation {
   0% {
@@ -515,12 +523,100 @@ left:40%
 
 
 /*** css page inscription/connexion***/
+#bodyinscription_connexion{
+
+background: linear-gradient(90deg, rgba(0, 204, 255, 0.63) 1.78%, rgba(102, 204, 51, 0.369683) 63.69%, rgba(217, 217, 217, 0) 100%);
+
+}
+#headerLogin{
+  padding:5%;
+
+}
+ #lien9{
+  top:-20%;
+left:100%;
+
+}
+
+#image9{
+  width: 5%;
+  top:0%;
+  left:95%;
+  position: absolute;
+}
+
+#bi1{
+  top:-1%;
+  position: absolute;
+  left:1%;
+  padding: 1% 4%;
+  top:2%;
+  background-color: white;
+  color:#00CCFF;
+  font-size: 100%;
+}
+
+#bi1:hover{
+  background-color:#00CCFF ;
+  color:white;
+}
+/**css rectangleconnexion**/
+
+#rectangle18{
+  position: absolute;
+width: 70%;
+height: 80%;
+left: 15%;
+top: 15%;;
+
+background: linear-gradient(90deg, rgba(0, 204, 255, 0.26) 34.67%, rgba(0, 204, 255, 0.56) 60.98%, rgba(0, 204, 255, 0.42) 86.1%);
+border-radius: 305px;
 
 
+}
+
+#label1{
+position: absolute;
+top:-20%;
+left:7%;
+font-size: 130%;
+}
+
+#login{
+  position: absolute;
+  top:20%;
+  font-size: 180%;
+  left:20%;
+}
 
 
+.title1{
+  font-family: 'Happy Monkey';
+  font-style: normal;
+  color: #66CC33;
+}
+.textelogin{
+  font-family: 'Happy Monkey';
+font-style: normal;
+color: #FFFFFF;
+}
 
+.textarea{
+  background: rgba(102, 204, 51, 0.33);
+  width:90%;
+  padding: 2%;
+  border: none;
+}
 
+#boutlogin{
+  margin-left: 50%;
+  padding:2%;
+}
+#lien3{
+  margin-left:10%;
+  font-size: 70%;
+  margin-left:30%;
+}
 /**css footer**/
  footer{
      position:absolute;
