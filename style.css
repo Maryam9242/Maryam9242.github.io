@@ -62,20 +62,8 @@ a {
   align-items: center;
   padding: 4%;
  background-color: none;
-}
-/* header-left {
-  order: 1;
-}
 
-header-right {
-  order: 2;
-  display: flex;
-  align-items: center;
-} */
-
-/* header-right a {
-  margin-right: 10px;
-} */
+}
 
 
 
@@ -84,46 +72,41 @@ header-right {
   /*border-radius: 4%;*/
   position: absolute;
   margin: 2%;
-  padding: 2% 7%;
+  padding: 1% 2%;
+  font-size: 80%;
+  left: 60%;
   top:2%;
 }
 
 
 /***css acces profil***/
  #image2{
-position:relative;
-width:30%;
+position:absolute;
+width:20%;
 height: 46%;
-left: 35%;
-top:30%;
+left: 80%;
+top:0%;
 
 }
+
+
 
 #lien2{
-  position:relative;
+  position:absolute;
   color: white;
   font-family: "Happy Monkey", sans-serif;
-  top:40%;
+  top:25%;
   right: 1%;
-  left: 5%;
+  left: 85%;
+  text-align: center;
 }
 
- #ellipse4{
-  position: absolute;
-  width: 20%;
-  height: 30%;
-  left: 80%;
-  top: -10%;
-  border-radius: 60%;
-  background: #66CC33;
-  /*transform: rotate(-14.91deg);*/
-}
 #image1{
-  position: relative;
-  width:50%;
-  height: 50%;
-  top:-20%;
-  left:30%;
+  position: absolute;
+  width:20%;
+  height: 20%;
+  top:0%;
+  left:-4%;
 }
 
 /***css de "Um Professional de Saude sempre ha mao e mais perto de si"**/
@@ -132,17 +115,17 @@ top:30%;
   position: absolute;
   width: 60%;
   height: 60%;
-  left: 5%;
-  top: 45%;
+  left: 20%;
+  top: 90%;
 
   font-family: 'Happy Monkey', sans-serif;
-
+  text-align: center;
   font-weight: 60%;
-  font-size: 150%;
+  font-size: 230%;
   line-height: 60%;
   text-transform: capitalize;
 
-  color: #66CC33;
+  color: #00CCFF;
 }
 /***css de “Cuide de sua saude e de quem ama,em dois cliques”***/
 
@@ -170,12 +153,12 @@ top:30%;
 
 #rectangle6{
 
-position: absolute;
-width: 70%;
-height: 80%;
-left: 15%;
-top: 64%;
- opacity: 0.5;
+position:absolute;
+width:100%;
+height: 100%;
+left: 0%;
+top: -10%;
+
 }
 
 
@@ -185,9 +168,9 @@ top: 64%;
   width: 100%;
   height: 10%;
   left: 0%;
-  top: 99%;
-
+  top: 60%;
   background: #00CCFF;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.9);
 
 }
 
@@ -567,7 +550,7 @@ left:100%;
 width: 70%;
 height: 80%;
 left: 15%;
-top: 15%;;
+top: 15%;
 
 background: linear-gradient(90deg, rgba(0, 204, 255, 0.26) 34.67%, rgba(0, 204, 255, 0.56) 60.98%, rgba(0, 204, 255, 0.42) 86.1%);
 border-radius: 305px;
@@ -617,6 +600,27 @@ color: #FFFFFF;
   font-size: 70%;
   margin-left:30%;
 }
+
+/**css rectangle inscription**/
+
+#rectangle19{
+
+  position: absolute;
+width: 70%;
+height: 120%;
+left: 15%;
+top: 110%;
+
+  background: linear-gradient(90deg, rgba(102, 204, 51, 0.26) 34.67%, rgba(102, 204, 51, 0.1) 60.98%, rgba(102, 204, 51, 0.34) 86.1%);
+  border-radius: 305px;
+
+}
+
+
+
+
+
+
 /**css footer**/
  footer{
      position:absolute;
