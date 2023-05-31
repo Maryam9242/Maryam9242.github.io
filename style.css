@@ -2,7 +2,7 @@ body {
 background: linear-gradient(90deg, rgba(102, 204, 51, 0.369683) 31.96%,
 rgba(217, 217, 217, 0) 50.38%,
  rgba(0, 204, 255, 0.63) 86.19%);
-
+height: auto;
 }
 
 /***css des boutons***/
@@ -605,20 +605,63 @@ color: #FFFFFF;
 
 #rectangle19{
 
-  position: absolute;
+position: absolute;
 width: 70%;
-height: 120%;
+height: 190%;
 left: 15%;
-top: 110%;
+margin-top: 40%;
 
   background: linear-gradient(90deg, rgba(102, 204, 51, 0.26) 34.67%, rgba(102, 204, 51, 0.1) 60.98%, rgba(102, 204, 51, 0.34) 86.1%);
   border-radius: 305px;
 
 }
+#creerCompte{
+  position: absolute;
+  top:5%;
+  left:30%;
+  width:170%;
+  font-size: 230%;
+}
+
+/* #registro{
+  position: absolute;
+  left:15%;
+  top:20%;
+} */
+
+.registro1{
+
+  background: rgba(102, 204, 51, 0.33);
+  width:90%;
+  padding: 2%;
+  border: none;
+}
 
 
+#registroGauche{
+position: absolute;
+font-size: 210%;
+top:15%;
+left: 10%;
+}
 
-
+#registroDroit{
+position: absolute;
+left:60%;
+top:15%;
+font-size: 210%;
+}
+#registroBas{
+position: absolute;
+top: 45%;
+left: 10%;
+font-size: 210%;
+}
+#boutRegistro{
+  position: absolute;
+  padding: 2%;
+  margin-left:45%;
+}
 
 
 /**css footer**/

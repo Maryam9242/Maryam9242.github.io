@@ -7,7 +7,7 @@
   </head>
   <body id="bodyinscription_connexion">
     <header id="headerLogin">
-<button id="bi1" class="boutNorm"> é um profissional?</button>
+<button id="bi1" class="boutNorm"> E um profissional?</button>
 <a href="acceuil.html" id="lien9"><img id="image9" src="imageAcceuil/image9.png" width="50"></a>
     </header>
 
@@ -17,16 +17,16 @@
 
       <h1 class="title1" id="label1">Já tenho uma conta Saudeasy</h1>
 <br>
-        <label class="textelogin">endereço de correio electrónico ou telefone *<br>
+        <label class="textelogin">Endereço de correio electrónico ou telefone *<br>
         <input type="text" class="textarea"></label><br><br>
-        <label class="textelogin">palavra-passe*<br>
+        <label class="textelogin">Palavra-passe*<br>
         <input type="password" class="textarea"></label>
         <br>
         <br>
-        <label class="textelogin"><input type="checkbox" > recordar o meu login</label>
+        <label class="textelogin"><input type="checkbox" > Recordar o meu login</label>
         <br>
       <br>
-        <input type="submit" value="login" id="boutlogin" class="boutNorm" >
+        <input type="submit" value="Login" id="boutlogin" class="boutNorm" >
 
 <br></form>
 <a id="lien3" class="textelogin" href="reinitialiser_mp.php">esqueci-me da minha palavra-passe?</a>
@@ -37,41 +37,63 @@
 
 
 <div id="rectangle19">
-  <label class="title1">Criar uma conta saudeasy	</label>
-
-  <form id="inscription" action="submit">
-
-<label>Nome*<br><input type="text"  class="textarea"></label>
-<label>Sobrenome*<br><input type="text"  class="textarea"></label><br>
-<label>Data de nascimento*<br><input type="date"  class="textarea"></label>
-<label>E-mail*<br><input type="email"  class="textarea"></label>
-<label> Telefone*<br><input type="number" maxlength="10"  class="textarea"></label>
-<label>Língua<br><select id="dropdown2">
-   <option value="">Português</option>
-   <option value="option1">Espanhol</option>
-   <option value="option2">italiano</option>
-   <option value="option3">Francês</option>
- </select></label>
+  <div id="registro">
+    <form id="inscription" method="post" >
+        <h1 class="title1" id="creerCompte">Criar uma conta saudeasy	</h1>
 <br>
-<label> Tem uma Seguro de Saude?<input type="checkbox" value="sim">sim
-<input type="checkbox"  value="não">nao</label>
-<label>Língua<br><select id="dropdown2">
-<select id="dropdown2">
-  escolha o seu Seguro de Saùde
+            <div id="registroGauche">
+              <label  class="textelogin">Nome*<br><input type="text" class="registro1"></label>
+                    <br>
+                    <br>
+                    <label class="textelogin">Data de nascimento*<br><input type="date" class="registro1"></label>
+                    <br>
+                    <br>
+                    <label class="textelogin"> Telefone*<br><input type="number" maxlength="10"  class="registro1"></label>
+              </div>
+
+    <div id="registroDroit">
+      <label class="textelogin">Sobrenome*<br><input type="text"  class="registro1"></label><br>
+
+    <br>
+<label class="textelogin">E-mail*<br><input type="email"  class="registro1"></label><br>
+
+      <br>
+      <label class="textelogin">Língua<br><select id="dropdown1" class="registro1">
+         <option value="">Português</option>
+         <option value="option1">Espanhol</option>
+         <option value="option2">italiano</option>
+         <option value="option3">Francês</option>
+       </select></label>
+      </div>
+
+<br>
+<br>
+<div id="registroBas">
+<label class="textelogin"> Tem uma Seguro de Saude?  <input type="checkbox" value="sim" class="textelogin"> Sim
+<input type="checkbox"  value="não" class="textelogin"> Nao</label>
+<br>
+<select id="dropdown2" class="registro1">
+<option>  Escolha o seu Seguro de Saùde</option>
  </select>
  <br>
-<label><input type="image" id="ajouter" src="imageAcceuil/image15.png" width="2%">adicionar uma pessoa</label>
+ <br>
+<label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/image15.png" width="5%"> Adicionar uma pessoa</label>
 <br>
-<label><input type="image" id="ajouter" src="imageAcceuil/image15.png" width="2%">adicionar um animal de estimação</label>
 <br>
-<label><input type="checkbox" >Recordar o meu login</label><br>
-<label><input type="checkbox" >Aceitar as condições</label><br>
-<label><input type="checkbox" >Subscrever ao newsletter</label><br>
-
-<input type="submit" value="Registro">
+<label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/image15.png" width="5%"> Adicionar um animal de estimação</label>
+<br>
+<br>
+<label class="textelogin"><input type="checkbox" >Recordar o meu login</label><br>
+<br>
+<label class="textelogin"><input type="checkbox" >Aceitar as condições</label><br>
+<br>
+<label class="textelogin"><input type="checkbox" >Subscrever ao newsletter</label><br>
+<br><br>
+<input type="submit" value="Registro" class="boutNorm" id="boutRegistro">
+</div>
   </form>
 </div>
-
+</div>
 
 
 
