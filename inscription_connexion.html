@@ -29,7 +29,7 @@
         <input type="submit" value="Login" id="boutlogin" class="boutNorm" >
 
 <br></form>
-<a id="lien3" class="textelogin" href="reinitialiser_mp.php">esqueci-me da minha palavra-passe?</a>
+<a id="lien3" class="textelogin" href="reinitialiser_mp.php">Esqueci-me da minha palavra-passe?</a>
 
 
 </div>
@@ -77,8 +77,8 @@
  </select>
  <br>
  <br>
-<label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/image15.png" width="5%"> Adicionar uma pessoa</label>
-<br>
+<label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/image15.png" width="5%" id="ajouterBtnPersonne"> Adicionar uma pessoa</label>
+<br><div id="formContainerPersonne"></div>
 <br>
 <label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/image15.png" width="5%"> Adicionar um animal de estimação</label>
 <br>
@@ -95,6 +95,34 @@
 </div>
 </div>
 
+<script type="text/javascript">
+/** js pour ajouter un formulaire pour une personne**/
+var ajouterBtnPersonne = document.getElementById('ajouterBtnPersonne');
+   var formContainerPersonne = document.getElementById('formContainerPersonne');
+   var formCountPersonne = 0;
+   ajouterBtnPersonne.addEventListener('click', function() {
+     event.preventDefault(); // Empêcher le comportement par défaut du bouton
+
+     var formPersonne = document.createElement('form');
+     formPersonne.className = 'formPersonne-container';
+     formPersonne.innerHTML = `
+       <h3>Formulaire ${formCountPersonne + 1}</h3>
+       <label for="nom">Nome :</label>
+       <input type="text" id="nom${formCountPersonne}" name="nom${formCountPersonne}">
+       <br>
+       <label for="Sobrenome">Sobrenome:</label>
+       <input type="text" id="Sobrenome${formCountPersonne}" name="Sobrenome${formCountPersonne}">
+       <br>
+       <label for="ddn">Data de nascimento :</label>
+       <input type="date" id="ddn${formCountPersonne}" name="ddn${formCountPersonne}">
+     `;
+     formContainerPersonne.appendChild(formPersonne);
+     formCountPersonne++;
+   });
+
+
+
+</script>
 
 
 
