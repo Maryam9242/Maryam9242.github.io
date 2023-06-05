@@ -100,13 +100,13 @@
 var ajouterBtnPersonne = document.getElementById('ajouterBtnPersonne');
    var formContainerPersonne = document.getElementById('formContainerPersonne');
    var formCountPersonne = 0;
-   ajouterBtnPersonne.addEventListener('click', function() {
+   ajouterBtnPersonne.addEventListener('click', function(event) {
      event.preventDefault(); // Empêcher le comportement par défaut du bouton
 
      var formPersonne = document.createElement('form');
      formPersonne.className = 'formPersonne-container';
      formPersonne.innerHTML = `
-       <h3>Formulaire ${formCountPersonne + 1}</h3>
+       <h3>Pessoa ${formCountPersonne + 1}</h3>
        <label for="nom">Nome :</label>
        <input type="text" id="nom${formCountPersonne}" name="nom${formCountPersonne}">
        <br>
@@ -115,9 +115,23 @@ var ajouterBtnPersonne = document.getElementById('ajouterBtnPersonne');
        <br>
        <label for="ddn">Data de nascimento :</label>
        <input type="date" id="ddn${formCountPersonne}" name="ddn${formCountPersonne}">
+       <br>
+       <label>Laços familiares:</label>
+       <select id="liens_familiaux">
+       <option> Filho  </option>
+       <option>  Pai ou Mãe </option>
+       <option> Irmandade  </option>
+       </select>
+
      `;
      formContainerPersonne.appendChild(formPersonne);
      formCountPersonne++;
+
+
+     /**agrandir la div**/
+
+     var rectangle19 = document.getElementById('rectangle19');
+     rectangle19.style.height = formContainerPersonne.clientHeight + '%';
    });
 
 

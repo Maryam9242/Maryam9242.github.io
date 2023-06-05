@@ -635,13 +635,18 @@ color: #FFFFFF;
 position: absolute;
 width: 70%;
 height: 190%;
+/* margin-bottom: 0; */
+transition: height 0.3s ease;
 left: 15%;
-margin-top: 40%;
+top:100%;
+/* margin-top: 40%; */
 
   background: linear-gradient(90deg, rgba(102, 204, 51, 0.26) 34.67%, rgba(102, 204, 51, 0.1) 60.98%, rgba(102, 204, 51, 0.34) 86.1%);
   border-radius: 305px;
 
 }
+
+
 #creerCompte{
   position: absolute;
   top:5%;
@@ -690,10 +695,15 @@ font-size: 210%;
   margin-left:45%;
 }
 
-.formContainerPersonne{
-  position: absolute;
-     margin-bottom: 10px;
+#formContainerPersonne{
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 50%;
    }
+
+
+
+
 /**css footer**/
  footer{
      position:absolute;
