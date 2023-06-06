@@ -637,6 +637,9 @@ width: 70%;
 height: 190%;
 /* margin-bottom: 0; */
 transition: height 0.3s ease;
+color: white;
+overflow-y: auto;
+overflow-x: hidden;
 left: 15%;
 top:100%;
 /* margin-top: 40%; */
@@ -646,6 +649,18 @@ top:100%;
 
 }
 
+#rectangle19::-webkit-scrollbar{
+  width: 20px;
+}
+
+/* #rectangle19::-webkit-scrollbar-track{
+  background-color: white;/*couleur de fond de la barre de defilement
+}
+
+#rectangle19::-webkit-scrollbar-thumb{
+  background-color: #00CCFF;
+}
+*/
 
 #creerCompte{
   position: absolute;
@@ -668,7 +683,16 @@ top:100%;
   padding: 2%;
   border: none;
 }
-
+.registro2{
+  align-items: center;
+  background: rgba(102, 204, 51, 0.33);
+  width:20%;
+  height: 3%;
+  padding: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  border: none;
+}
 
 #registroGauche{
 position: absolute;
@@ -701,10 +725,43 @@ font-size: 210%;
   font-size: 50%;
    }
 
+   #formContainerAnimal{
+     position: relative;
+     margin-bottom: 10px;
+     font-size: 50%;
+      }
 
+#image12{
+  position: absolute;
+  opacity: 0.5;
+  width:30%;
+  margin-top:120%;
+  margin-left:67%;
+}
 
+#image13{
 
+  position: absolute;
+  opacity: 0.5;
+  width:50%;
+  margin-top:60%;
+  margin-left:15%;
+}
+
+#image11{
+  position: absolute;
+  opacity: 0.7;
+  width:30%;
+  margin-top:5%;
+  margin-left:70%;
+
+}
 /**css footer**/
+
+#inscriptionConnexion{
+
+  top:330%;
+}
  footer{
      position:absolute;
     bottom: 0;

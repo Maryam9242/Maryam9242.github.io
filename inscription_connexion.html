@@ -10,7 +10,7 @@
 <button id="bi1" class="boutNorm"> E um profissional?</button>
 <a href="acceuil.html" id="lien9"><img id="image9" src="imageAcceuil/image9.png" width="50"></a>
     </header>
-
+<img src="imageAcceuil/image11.png" id="image11">
     <div id="rectangle18">
       <div id="login">
       <form id="connexion" method="post">
@@ -34,7 +34,7 @@
 
 </div>
     </div>
-
+<img src="imageAcceuil/image13.png" id="image13">
 
 <div id="rectangle19">
   <div id="registro">
@@ -80,8 +80,8 @@
 <label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/image15.png" width="5%" id="ajouterBtnPersonne"> Adicionar uma pessoa</label>
 <br><div id="formContainerPersonne"></div>
 <br>
-<label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/image15.png" width="5%"> Adicionar um animal de estimação</label>
-<br>
+<label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/image15.png" width="5%" id="ajouterBtnAnimal"> Adicionar um animal de estimação</label>
+<br><div id="formContainerAnimal"></div>
 <br>
 <label class="textelogin"><input type="checkbox" >Recordar o meu login</label><br>
 <br>
@@ -97,9 +97,10 @@
 
 <script type="text/javascript">
 /** js pour ajouter un formulaire pour une personne**/
-var ajouterBtnPersonne = document.getElementById('ajouterBtnPersonne');
-   var formContainerPersonne = document.getElementById('formContainerPersonne');
-   var formCountPersonne = 0;
+  var ajouterBtnPersonne = document.getElementById('ajouterBtnPersonne');
+  var formContainerPersonne = document.getElementById('formContainerPersonne');
+  var formCountPersonne = 0;
+
    ajouterBtnPersonne.addEventListener('click', function(event) {
      event.preventDefault(); // Empêcher le comportement par défaut du bouton
 
@@ -108,16 +109,16 @@ var ajouterBtnPersonne = document.getElementById('ajouterBtnPersonne');
      formPersonne.innerHTML = `
        <h3>Pessoa ${formCountPersonne + 1}</h3>
        <label for="nom">Nome :</label>
-       <input type="text" id="nom${formCountPersonne}" name="nom${formCountPersonne}">
-       <br>
-       <label for="Sobrenome">Sobrenome:</label>
-       <input type="text" id="Sobrenome${formCountPersonne}" name="Sobrenome${formCountPersonne}">
+       <input type="text"  class="registro2" id="nom${formCountPersonne}" name="nom${formCountPersonne}">
+
+       <label for="Sobrenome" >Sobrenome:</label>
+       <input type="text"  class="registro2" id="Sobrenome${formCountPersonne}" name="Sobrenome${formCountPersonne}">
        <br>
        <label for="ddn">Data de nascimento :</label>
-       <input type="date" id="ddn${formCountPersonne}" name="ddn${formCountPersonne}">
-       <br>
+       <input type="date"  class="registro2" id="ddn${formCountPersonne}" name="ddn${formCountPersonne}">
+
        <label>Laços familiares:</label>
-       <select id="liens_familiaux">
+       <select id="liens_familiaux"  class="registro2">
        <option> Filho  </option>
        <option>  Pai ou Mãe </option>
        <option> Irmandade  </option>
@@ -128,18 +129,58 @@ var ajouterBtnPersonne = document.getElementById('ajouterBtnPersonne');
      formCountPersonne++;
 
 
-     /**agrandir la div**/
 
-     var rectangle19 = document.getElementById('rectangle19');
-     rectangle19.style.height = formContainerPersonne.clientHeight + '%';
+
    });
 
+/** js pour ajouter un formulaire pour un animal**/
+var ajouterBtnAnimal = document.getElementById('ajouterBtnAnimal');
+var formContainerAnimal = document.getElementById('formContainerAnimal');
+var formCountAnimal = 0;
+
+ ajouterBtnAnimal.addEventListener('click', function(event) {
+   event.preventDefault(); // Empêcher le comportement par défaut du bouton
+
+   var formAnimal = document.createElement('form');
+ formAnimal.className = 'formAnimal-container';
+   formAnimal.innerHTML = `
+     <h3>Animal ${formCountAnimal + 1}</h3>
+     <label for="nom">Nome :</label>
+     <input type="text"  class="registro2" id="nom${formCountAnimal}" name="nom${formCountAnimal}">
+
+     <label for="Número de fichas" >Número de fichas:</label>
+     <input type="number"  class="registro2" id="Número_de_fichas${formCountAnimal}" name="Número_de_fichas${formCountAnimal}">
+     <br>
+     <br>
+     <label for="ddn">Idade:</label>
+     <input type="number"  class="registro2" id="ddn${formCountAnimal}" name="ddn${formCountAnimal}">
+
+     <label for="animais">Animal de estimação:</label>
+<select id="animais" class=registro2>
+  <option value="cao">Cão</option>
+  <option value="gato">Gato</option>
+  <option value="passaro">Pássaro</option>
+  <option value="peixe">Peixe</option>
+  <option value="roedor">Roedor</option>
+  <option value="reptil">Réptil</option>
+  <option value="coelho">Coelho</option>
+  <option value="cavalo">Cavalo</option>
+  <option value="outro">Outro</option>
+</select>
+   `;
+   formContainerAnimal.appendChild(formAnimal);
+   formCountAnimal++;
 
 
+
+
+ });
 </script>
 
 
-
-<footer></footer>
+<img src="imageAcceuil/image12.png" id="image12">
+<footer id="inscriptionConnexion"><a href="aviso_legal.php" id="liensAvisLegal"> aviso legal</a>
+<a href="contactar.php" id="lienContact">contactar</a>
+<a href="reseaux.php" id="lienReseaux">redes sociais</a></footer>
   </body>
 </html>
