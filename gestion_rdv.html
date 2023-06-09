@@ -8,36 +8,42 @@
   <body class="bodyPersonne">
 
 <header class="headerPersonne">
-<a href="acceuil.html" id="lien9"><img  src="imageAcceuil/Image9.png" width="50"></a>
+<a href="acceuil.html" id="lien9"><img  src="imageAcceuil/Image9.png" width="90"></a>
 <h1  class="title2">As minhas marcação</h1>
-<a href="messagerie.html"><img src="imageAcceuil/msg.png"  width='50' alt=""></a>
-<a href="document.html"><img src="imageAcceuil/doc.png"  width='50' alt=""></a>
-<img src="imageAcceuil/profil.png"  width='50' alt="">
-
+<a href="messagerie.html"><img src="imageAcceuil/msg.png"  width='50' class="msg"></a>
+<a href="document.html"><img src="imageAcceuil/doc.png"  width='50' alt="" class="doc"></a>
+<img src="imageAcceuil/profil.png" class="profil"  width='50' alt="">
+<div class="dropdown3">
+  <button class="dropdown-toggle">Nome</button>
+  <ul class="dropdown-menu">
+    <li><a href="mon_profil.html">O meu perfil</a></li>
+    <li><a href="deconnexion.php">Terminar sessão</a></li>
+  </ul>
+</div>
 </header>
 <div class="container">
 <div id=colonne1 class="colonne">
   <h2>ADMINISTRADOR DA CONTA</h2>
-  <h3>Lista de pessoas associadas à conta</h3>
-  <label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" id="ajouterBtnPersonne"> Adicionar uma pessoa</label>
-  <h3>Lista de animais associadas à conta</h3>
-  <label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" id="ajouterBtnAnimal"> Adicionar um animal de estimação</label>
+  <h3 class="title4">Lista de pessoas associadas à conta</h3>
+  <label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" class="boutonAjouter"> Adicionar uma pessoa</label>
+  <h3 >Lista de animais associadas à conta</h3>
+  <label class="textelogin"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" class="boutonAjouter"> Adicionar um animal de estimação</label>
   </div>
 
   <div id=colonne2 class="colonne">
-    <h2>Historial de marcações</h2>
+    <h2 class="title3">Historial de marcações</h2>
     </div>
 
     <div id="colonne3" class="colonne">
-      <h2>Próxima consulta</h2>
-      <button type="button" class=boutNorm name="button">Marcar uma consulta</button>
+      <h2  class="title3">Próxima consulta</h2>
+      <button type="button" class="boutNorm" id="boutMarcar" name="button">Marcar uma consulta</button>
     </div>
 
 </div>
 
 
 
-<footer>
+<footer class="footerPersonne">
 <a href="aviso_legal.php" id="liensAvisLegal"> aviso legal</a>
 <a href="contactar.php" id="lienContact">contactar</a>
 <a href="reseaux.php" id="lienReseaux">redes sociais</a></footer>
