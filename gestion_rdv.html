@@ -29,11 +29,106 @@
 <div id=colonne1 class="colonne">
   <h2>ADMINISTRADOR DA CONTA</h2>
   <h3 class="title4">Lista de pessoas associadas à conta</h3>
-  <label class="textelogin2"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" class="boutonAjouter"> Adicionar uma pessoa</label>
+  <label class="textelogin2"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" id="boutAjouterPersonne" class="boutonAjouter"> Adicionar uma pessoa</label>
+<div id="popupsContainerPersonne"></div>
+
+<!-- ajouter une personne formulaire en popups -->
+<script type="text/javascript">
+var formCountPersonne=0;
+var boutAjouterPersonne=document.getElementById('boutAjouterPersonne');
+boutAjouterPersonne.addEventListener('click', function(event) {
+event.preventDefault();
+
+var popup = document.createElement('div');
+popup.className = 'popup';
+popup.innerHTML = `
+<form>
+<h3>Pessoa ${formCountPersonne + 1}</h3>
+<label for="nom">Nome :</label>
+<input type="text"  class="registro2" id="nom${formCountPersonne}" name="nom${formCountPersonne}">
+
+<label for="Sobrenome" >Sobrenome:</label>
+<input type="text"  class="registro2" id="Sobrenome${formCountPersonne}" name="Sobrenome${formCountPersonne}">
+<br>
+<label for="ddn">Data de nascimento :</label>
+<input type="date"  class="registro2" id="ddn${formCountPersonne}" name="ddn${formCountPersonne}">
+<br>
+<label>Laços familiares:</label>
+<select id="liens_familiaux"  class="registro2">
+<option> Filho  </option>
+<option>  Pai ou Mãe </option>
+<option> Irmandade  </option>
+</select>
+<br>
+      <button type="submit" class="boutNorm">Adicionar</button>
+      </form>
+`;
+
+var popupsContainerPersonne = document.getElementById('popupsContainerPersonne');
+popupsContainerPersonne.appendChild(popup);
+
+formCountPersonne++;
+});
+</script>
+
+
+
+
+
+<!-- fin formulaire ajouter une personne -->
+
   <h3 >Lista de animais associadas à conta</h3>
-  <label class="textelogin2"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" class="boutonAjouter"> Adicionar um animal de estimação</label>
+  <label class="textelogin2"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" id="boutAjouterAnimal"  class="boutonAjouter"> Adicionar um animal de estimação</label>
   </div>
 
+<!-- ajouter unAnimal formulaire  -->
+<script type="text/javascript">
+var formCountAnimal=0;
+var boutAjouterAnimal=document.getElementById('boutAjouterAnimal');
+boutAjouterAnimal.addEventListener('click', function(event) {
+event.preventDefault();
+
+var popup = document.createElement('div');
+popup.className = 'popup';
+popup.innerHTML = `
+<form>
+<h3>Animal ${formCountAnimal + 1}</h3>
+<label for="nom">Nome :</label>
+<input type="text"  class="registro2" id="nom${formCountAnimal}" name="nom${formCountAnimal}">
+
+<label for="Número de fichas" >Número de fichas:</label>
+<input type="number"  class="registro2" id="Número_de_fichas${formCountAnimal}" name="Número_de_fichas${formCountAnimal}">
+<br>
+<br>
+<label for="ddn">Idade:</label>
+<input type="number"  class="registro2" id="ddn${formCountAnimal}" name="ddn${formCountAnimal}">
+
+<label for="animais">Animal de estimação:</label>
+<select id="animais" class=registro2>
+<option value="cao">Cão</option>
+<option value="gato">Gato</option>
+<option value="passaro">Pássaro</option>
+<option value="peixe">Peixe</option>
+<option value="roedor">Roedor</option>
+<option value="reptil">Réptil</option>
+<option value="coelho">Coelho</option>
+<option value="cavalo">Cavalo</option>
+<option value="outro">Outro</option>
+</select><br>
+      <button type="submit" class="boutNorm">Adicionar</button>
+      </form>
+`;
+
+var popupsContainerPersonne = document.getElementById('popupsContainerPersonne');
+popupsContainerPersonne.appendChild(popup);
+
+formCountAnimal++;
+});
+</script>
+
+
+
+<!-- fin formulaire ajouter un Animal -->
   <div id=colonne2 class="colonne">
     <h2 class="title3">Historial de marcações</h2>
     </div>
@@ -43,7 +138,7 @@
       <button type="button" class="boutNorm" id="boutMarcar" name="button">Marcar uma consulta</button>
     </div>
 
-</div> 
+</div>
 
 
 
