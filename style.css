@@ -734,9 +734,9 @@ font-size: 210%;
 #image12{
   position: absolute;
   opacity: 0.5;
-  width:30%;
-  margin-top:120%;
-  margin-left:67%;
+  width:20%;
+  margin-top:130%;
+  margin-left:80%;
 }
 
 #image13{
@@ -753,7 +753,7 @@ font-size: 210%;
   opacity: 0.7;
   width:30%;
   margin-top:5%;
-  margin-left:70%;
+  margin-left:68%;
 
 }
 
@@ -859,7 +859,7 @@ position: absolute;
   font-size: 200%;
 }
 
-#lien9{
+ #lien9Bis{
   position: absolute;
   left: 0%;
   top:15%;
@@ -957,10 +957,21 @@ color: black;
 
 
 
+/**css page document**/
+#colonne4{
+background:white;
+position: absolute;
+left:30%;
+width:65%;
+top:60%;
+height: 70%;
+overflow-y: auto;
+overflow-x: hidden;
+}
 
-
-
-
+#colonne4::-webkit-scrollbar{
+  width: 20px;
+}
 
 
 
