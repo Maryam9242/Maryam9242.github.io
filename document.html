@@ -8,6 +8,7 @@
   <body class="bodyPersonne">
 
 <header class="headerPersonne">
+
 <a href="acceuil.html" id="lien9Bis"><img  src="imageAcceuil/Image9.png" width="90"></a>
 <h1  class="title2">Os meus documentos</h1>
 <a href="messagerie.html"><img src="imageAcceuil/msg.png"  width='50' class="msg"></a>
@@ -25,6 +26,7 @@
 
 <!-- fin menu deroulant -->
 </header>
+
 <div class="container">
 <div id=colonne1 class="colonne">
   <h2>ADMINISTRADOR DA CONTA</h2>
@@ -33,15 +35,33 @@
 </div>
 
 
-
+<input type="file" id="file-input" style="display: none;">
+<button onclick="addFile()" id="boutFile"class="boutNorm">ADICIONAR UM DOCUMENTO</button>
 
 
     <div id="colonne4" class="colonne">
-      <h2  class="title3"></h2>
+      <p id="selected-file-name"></p>
 
     </div>
 
+<script type="text/javascript">
+function addFile() {
+  
+var fileInput = document.getElementById("file-input");
+fileInput.click(); // Clic sur l'élément d'entrée de fichier caché
 
+fileInput.addEventListener("change", function() {
+  var selectedFile = fileInput.files[0];
+  var fileNameDisplay = document.getElementById("selected-file-name");
+
+  if (selectedFile) {
+    fileNameDisplay.textContent = "Fichier sélectionné : " + selectedFile.name;
+  } else {
+    fileNameDisplay.textContent = "Aucun fichier sélectionné";
+  }
+});
+}
+</script>
 
 
 
