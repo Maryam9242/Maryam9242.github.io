@@ -11,6 +11,8 @@
 
 <a href="acceuil.html" id="lien9Bis"><img  src="imageAcceuil/Image9.png" width="90"></a>
 <h1  class="title2">Os meus documentos</h1>
+<a href="téléconsultation.html"><img src="imageAcceuil/visio.png"  width='250' class="visio"></a>
+
 <a href="messagerie.html"><img src="imageAcceuil/msg.png"  width='50' class="msg"></a>
 <a href="gestion_rdv.html"><img src="imageAcceuil/calendar.png"  width='60' alt="" class="doc"></a>
 <img src="imageAcceuil/profil.png" class="profil"  width='50' alt="">
@@ -41,12 +43,14 @@
 
     <div id="colonne4" class="colonne">
       <p id="selected-file-name"></p>
+      <div id=container></div>
 
     </div>
 
 <script type="text/javascript">
+var container=document.getElementById('container');
 function addFile() {
-  
+
 var fileInput = document.getElementById("file-input");
 fileInput.click(); // Clic sur l'élément d'entrée de fichier caché
 
@@ -55,7 +59,9 @@ fileInput.addEventListener("change", function() {
   var fileNameDisplay = document.getElementById("selected-file-name");
 
   if (selectedFile) {
+
     fileNameDisplay.textContent = "Fichier sélectionné : " + selectedFile.name;
+
   } else {
     fileNameDisplay.textContent = "Aucun fichier sélectionné";
   }

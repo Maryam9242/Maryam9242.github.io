@@ -876,6 +876,12 @@ position: absolute;
   top:30%;
 }
 
+.visio{
+  position: absolute;
+  left:40%;
+  top:-35%;
+
+}
 .profil{
   position: absolute;
   width:15%;
@@ -986,6 +992,31 @@ border-radius: 45px;
 top:35%;
 left: 67%;
 }
+
+/*** css de la page profil***/
+
+#bodyProfil{
+
+  background: linear-gradient(90deg, rgba(102, 204, 51, 0.369683) 31.96%, rgba(217, 217, 217, 0) 50.38%, rgba(0, 204, 255, 0.63) 86.19%);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**css footer**/
 
 .footerPersonne{
