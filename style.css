@@ -1001,11 +1001,44 @@ left: 67%;
 
 }
 
+/**partie identité***/
+#identite{
+
+top: 30%;
+height: 60%;
 
 
 
+}
+#photoProfil {
+  position: absolute;
+    width: 70%;
+    height: 80%%;
 
+    object-fit: cover;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#photoid{
+  position: absolute;
+  padding:20%;
+  width:100%;
+}
+#uploadBtn {
+    display: none;
+}
 
+#cadre2{
+  top:170%;
+  position: absolute;
+}
+
+.cadre{
+  background: white;
+  position: absolute;
+  left: 15%;
+  width: 70%;
+}
 
 
 

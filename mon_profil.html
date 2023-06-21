@@ -28,7 +28,68 @@
     <!-- fin menu deroulant -->
     </header>
     <body id="bodyProfil">
+<h1>IDENTIDADE</h1>
 
-    </body>
+<div id="identite" class="cadre">
+<div id="photoid">
+  <img id="photoProfil" src="default.png" alt="Photo de profil">
+  <input type="file" id="uploadBtn"  onchange="loadPhoto(event)">
+</div>
+
+<div id="cadreGauche">
+<p>Nome</p>
+<p>Sobrenome</p>
+<p>Data de nacimiento</p>
+<p>E-mail</p>
+<p>Telephone</p>
+
+</div>
+
+</div>
+
+<!-- code js pour oaploader une image de profil -->
+<script type="text/javascript">
+function loadPhoto(event) {
+  var input = event.target;
+  var reader = new FileReader();
+
+  reader.onload = function(){
+      var dataURL = reader.result;
+      var photoProfil = document.getElementById("photoProfil");
+      photoProfil.src = dataURL;
+  };
+
+  reader.readAsDataURL(input.files[0]);
+}
+
+document.getElementById("photoProfil").addEventListener("click", function(){
+  document.getElementById("uploadBtn").click();
+});
+</script>
+
+<!-- fin du code js pour oaploader des images -->
+
+<br>
+<h1>PESSOA ASSOCIADA A CONTA</h1>
+<div id="cadre2"class="cadre">
+
+</div>
+
+<br>
+<h1>ANIMAIS ASSOCIADOS A CONTA</h1>
+<div class='cadre'></div>
+<br>
+<h1>PARAMETRO</h1>
+<div class="cadre"></div>
+
+<footer>
+<a href="aviso_legal.php" id="liensAvisLegal"> aviso legal</a>
+<a href="contactar.php" id="lienContact">contactar</a>
+<a href="reseaux.php" id="lienReseaux">redes sociais</a>
+</footer>
+
+
+
+
   </body>
 </html>
