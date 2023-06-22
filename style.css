@@ -1004,7 +1004,7 @@ left: 67%;
 /**partie identité***/
 #identite{
 
-top: 30%;
+top: 40%;
 height: 60%;
 
 
@@ -1029,10 +1029,19 @@ height: 60%;
 }
 
 #cadre2{
-  top:170%;
-  position: absolute;
+  top:120%;
+height: 30%;
 }
 
+#cadre3{
+  top:170%;
+  height: 40%;
+}
+
+#cadre4{
+  top:230%;
+  height: 40%;
+}
 .cadre{
   background: white;
   position: absolute;
