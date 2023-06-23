@@ -1047,17 +1047,59 @@ height: 30%;
   position: absolute;
   left: 15%;
   width: 70%;
+}#cadreGauche{
+  position: absolute;
+  left:70%;
+  top:10%;
+  font-size: 100%;
+}
+
+.titleProfil{
+  position: absolute;
+  font-size: 90%;
+  left:15%;
+}
+
+#title7{
+  top:30%;
+}
+#title5{
+  top:110%;
 }
 
 
+#title6{
+  top:160%;
+}
 
+#title8{
+  top:220%;
+}
 
+.modif{
+  position: absolute;
+  width:5%;
+  left:95%;
+}
 
+#ajouterBtnAnimalProfil{
+  position: relative;
+  width:3%;
+  top:0%;
+  left:0%;
+}
+#ajouterBtnPersonneProfil{
+  position: relative;
+  width:3%;
+  top:0%;
+  left:0%;
+}
+.texteloginProfil{
+  position: relative;
+  top:70%;
+  left:70%;
 
-
-
-
-
+}
 
 /**css footer**/
 

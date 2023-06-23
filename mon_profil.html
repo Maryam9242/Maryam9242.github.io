@@ -28,9 +28,10 @@
     <!-- fin menu deroulant -->
     </header>
     <body id="bodyProfil">
-<h1>IDENTIDADE</h1>
+<h1 id="title7" class="titleProfil">IDENTIDADE</h1>
 
 <div id="identite" class="cadre">
+  <input type="image" src="imageAcceuil/modif.png" width="5%" class="modif" id="modif1">
 <div id="photoid">
   <img id="photoProfil" src="default.png" alt="Photo de profil">
   <input type="file" id="uploadBtn"  onchange="loadPhoto(event)">
@@ -41,7 +42,7 @@
 <p>Sobrenome</p>
 <p>Data de nacimiento</p>
 <p>E-mail</p>
-<p>Telephone</p>
+<p>Telefone</p>
 <p>Nùmero de conta</p>
 <p>Nome de seguro de saude</p>
 <p>Nùmero de segurança social</p>
@@ -73,21 +74,32 @@ document.getElementById("photoProfil").addEventListener("click", function(){
 <!-- fin du code js pour oaploader des images -->
 
 <br>
-<h1>PESSOA ASSOCIADA A CONTA</h1>
+<h1 id="title5" class="titleProfil">PESSOA ASSOCIADA A CONTA</h1>
 <div id="cadre2"class="cadre">
-
+  <input type="image" src="imageAcceuil/modif.png" width="5%" class="modif" id="modif2">
+<label class="texteloginProfil"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" id="ajouterBtnPersonneProfil"> Adicionar uma pessoa</label>
 </div>
 
 <br>
-<h1>ANIMAIS ASSOCIADOS A CONTA</h1>
-<div id="cadre3" class='cadre'></div>
-<br>
-<h1>PARAMETRO</h1>
-<div id="cadre4" class="cadre">
+<h1 id="title6" class="titleProfil">ANIMAIS ASSOCIADOS A CONTA</h1>
+<div id="cadre3" class='cadre'>
 
-<a href="">Lingua</a>
-<a href="">Método de pagamento  </a>
-<a href="">Eliminar a minha conta</a>
+  <input type="image" src="imageAcceuil/modif.png" width="5%" class="modif" id="modif3">
+<label class="texteloginProfil"><input type="image" class="ajouter" src="imageAcceuil/Image15.png" width="5%" id="ajouterBtnAnimalProfil"> Adicionar um animal </label>
+</div>
+
+
+
+<br>
+
+
+
+<h1 id="title8" class="titleProfil">PARAMETRO</h1>
+<div id="cadre4" class="cadre">
+  <input type="image" src="imageAcceuil/modif.png" width="5%" class="modif" id="modif4">
+<a href="">Lingua</a><br>
+<a href="">Método de pagamento  </a><br>
+<a href="" style="color:red">Eliminar a minha conta</a>
 </div>
 
 <footer>
